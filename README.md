@@ -1,3 +1,13 @@
+Dependências instaladas:
+
+### `npm install axios`
+
+### `npm i md5`
+
+### `$ npm i --save-dev @types/md5`
+
+HASH: chave de tempo + chave privada + chave pública
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

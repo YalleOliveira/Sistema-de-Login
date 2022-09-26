@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { AuthProvider } from "./context/auth";
+import RoutesApp from "./routes/RoutesApp";
+import { GlobalStyled } from "./styles/styleGlobal";
+import Characters from "./pages/Characters";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AuthProvider>
+        <RoutesApp />
+        <GlobalStyled />
+      </AuthProvider>
+    </>
   );
-}
+};
 
 export default App;
